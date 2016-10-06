@@ -1,0 +1,59 @@
+body {
+  background:rgba(41, 144, 159, 0.78);
+  font-family: 'Lato', sans-serif;
+}
+
+.transicion {
+
+  overflow: hidden;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+  border: 3px solid transparent;
+  transition: .9s;
+
+}
+
+.img {
+  position: absolute;
+  transition: .9s;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+
+}
+
+.nota {
+  position: absolute;
+  width: 200px;
+  padding: 20px;
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  color: transparent;
+  transform: rotate(-45deg) scale(.2);
+  transition: .9s;
+}
+
+.transicion:hover {
+  border: solid #35f2ed 3px;
+
+}
+
+.transicion:hover .img {
+  transform: scale(1.5);
+}
+.transicion:hover .nota {
+  transform: rotate(0) scale(1);
+  background: rgba(60, 224, 240, 0.7);
+  color:rgba(15, 4, 136, 0.99)
+}
